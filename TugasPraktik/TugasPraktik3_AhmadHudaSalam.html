@@ -1,0 +1,105 @@
+<html>
+  <head>
+    <title>Tugas Praktik 3</title>
+  </head>
+  <body>
+    <center>
+      <h1><u>Formulir Pendaftaran</u></h1>
+
+      <video width="400" controls>
+        <source
+          src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/WeAreGoingOnBullrun.mp4"
+          type="video/mp4"
+        />
+      </video>
+
+      <br />
+      <br />
+
+      <canvas
+        id="myCanvas"
+        width="400"
+        height="200"
+        style="border: 1px solid black"
+      ></canvas>
+
+      <form action="" method="GET">
+        <table>
+          <tr>
+            <td><label for="namaLengkap">Nama Lengkap</label></td>
+            <td>:</td>
+            <td><input type="text" name="namaLengkap" /></td>
+          </tr>
+          <tr>
+            <td><label for="tempatLahir">Tempat Lahir</label></td>
+            <td>:</td>
+            <td><input type="text" name="tempatLahir" /></td>
+          </tr>
+          <tr>
+            <td><label for="tanggalLahir">Tanggal Lahir</label></td>
+            <td>:</td>
+            <td><input type="date" name="tanggalLahir" /></td>
+          </tr>
+          <tr>
+            <td>Jenis Kelamin</td>
+            <td>:</td>
+            <td>
+              <input type="radio" name="lakiLaki" />
+              <label for="lakiLaki">Laki-laki</label>
+              <input type="radio" name="perempuan" />
+              <label for="perempuan">Perempuan</label>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="alamat">Alamat</label></td>
+            <td>:</td>
+            <td><textarea name="alamat"> </textarea></td>
+          </tr>
+          <tr>
+            <td><label for="email">Email</label></td>
+            <td>:</td>
+            <td><input type="email" name="email" /></td>
+          </tr>
+          <tr>
+            <td><label for="phone">No.HP</label></td>
+            <td>:</td>
+            <td><input type="tel" name="phone" /></td>
+          </tr>
+          <tr>
+            <td><label for="kota">Kota</label></td>
+            <td>:</td>
+            <td>
+              <select name="kota" id="kota">
+                <option value="Depok" selected disabled>
+                  *****Pilih Kota*****
+                </option>
+                <option value="Depok">Depok</option>
+                <option value="Jakarta Selatan">Jakarta Selatan</option>
+                <option value="Bekasi">Bekasi</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <input type="submit" value="Simpan" />
+              <input type="reset" value="Batal" />
+            </td>
+          </tr>
+        </table>
+      </form>
+    </center>
+    <script>
+      var c = document.getElementById('myCanvas')
+      var ctx = c.getContext('2d')
+      var grd = ctx.createLinearGradient(0, 0, 250, 0)
+
+      grd.addColorStop(0, 'orange')
+      grd.addColorStop(1, 'yellow')
+      ctx.fillStyle = grd
+      ctx.fillRect(0, 0, 400, 200)
+
+      ctx.font = '30px Times New Roman'
+      ctx.strokeText('Educa Studio', 100, 100)
+    </script>
+  </body>
+</html>

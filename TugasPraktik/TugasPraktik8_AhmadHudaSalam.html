@@ -1,0 +1,51 @@
+<html>
+  <head>
+    <title>Tugas Praktik 8</title>
+  </head>
+  <body>
+    <h1>Browser Object Model javascript</h1>
+
+    <!-- Alert -->
+    <p>
+      Klik "Gamelab". Tunggu sampai 1 detik , akan menampilkan alert "Halo
+      Gamelab"
+    </p>
+    <button onclick="showAlert()">Gamelab</button>
+
+    <!-- Prompt -->
+    <p>
+      Klik "Prompt". Tunggu sampai 2 detik , akan menampilkan prompt "Masukkan
+      nama:" dan setelah diisi akan menampilkan alert "Halo, [nama]! Selamat
+      datang di website kami!
+    </p>
+    <button onclick="showPrompt()">Prompt</button>
+
+    <!-- Console Log -->
+    <p>
+      Klik "Show Console Log". Tunggu sampai 3 detik , akan menampilkan console
+      log "Ini adalah pesan Console Log."
+    </p>
+    <button onclick="showConsole()">Console Log</button>
+
+    <script>
+      function showAlert() {
+        setTimeout(function () {
+          alert('Halo Gamelab')
+        }, 1000)
+      }
+
+      function showPrompt() {
+        setTimeout(function () {
+          var name = prompt('Masukkan nama:')
+          alert(`Halo, ${name}! Selamat datang di website kami!`)
+        }, 2000)
+      }
+
+      function showConsole() {
+        setTimeout(function () {
+          console.log('Ini adalah pesan Console Log.')
+        }, 3000)
+      }
+    </script>
+  </body>
+</html>

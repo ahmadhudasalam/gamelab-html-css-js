@@ -1,0 +1,74 @@
+<html>
+  <head>
+    <title>Tugas Praktik 10</title>
+    <style>
+      .container {
+        width: 80%;
+      }
+      .program {
+        display: flex;
+      }
+      img {
+        margin-right: 20px;
+        cursor: pointer;
+      }
+      img:hover {
+        transform: scale(1.1);
+        transition: 0.3s;
+      }
+      table {
+        margin-top: 30px;
+        border-collapse: collapse;
+        width: 100%;
+      }
+      th,
+      td {
+        border: 1px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Penerapan Event Mouse pada Javascript</h1>
+      <p>Silahkan klik gambar dibawah ya..</p>
+      <div class="program">
+        <img
+          src="https://images2.imgbox.com/9f/cb/cLc030df_o.png"
+          alt="Kursus Upskill"
+          width="300"
+          onclick="showDescription('Kursus Upskill', 'Upgrade skill secara intensif sesuai dengan kebutuhan industri. Didukung dengan kurikulum berbasis industri dan para trainer expert.');"
+        />
+        <img
+          src="https://images2.imgbox.com/92/3e/u2N7sNh5_o.png"
+          alt="Magang Bersertifikat"
+          width="300"
+          ondblclick="showDescription('Magang bersertifikat', 'Cocok buat kamu siswa SMK, mahasiswa, dan guru yang ingin magang untuk tujuan akademis. Bisa pilih durasi dan konsentrasi');"
+        />
+        <img
+          src="https://images2.imgbox.com/b2/d4/8VXsdGUc_o.png"
+          alt="Karir Bootcamp"
+          width="300"
+          onmouseover="showDescription('Karir Bootcamp', 'Cocok buat kamu yang ingin mengoptimalkan skill secara penuh dan intensif Plus dibantu Penyaluran Kerja ke Hiring Partner Gamelab');"
+        />
+      </div>
+
+      <table>
+        <tr>
+          <th style="width: 30%">Nama Program</th>
+          <th>Keterangan</th>
+        </tr>
+        <tr>
+          <td id="programName"></td>
+          <td id="description"></td>
+        </tr>
+      </table>
+    </div>
+
+    <script>
+      function showDescription(programName, description) {
+        document.getElementById('programName').innerHTML = programName
+        document.getElementById('description').innerHTML = description
+      }
+    </script>
+  </body>
+</html>

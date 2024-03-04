@@ -1,0 +1,43 @@
+label,
+select,
+input:not(#id) {
+  display: block;
+  margin-bottom: 10px;
+}
+
+#id {
+  margin-right: 5px;
+}
+
+.pencarian {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 10px;
+}
+
+table {
+  border-collapse: collapse;
+  width: 70%;
+  margin-top: 15px;
+}
+
+table thead tr {
+  color: #fff;
+  background-color: #4caf50;
+}
+
+table tbody tr:nth-child(odd) {
+  background-color: #f2f2f2;
+}
+
+th,
+td {
+  text-align: left;
+  padding: 5px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}

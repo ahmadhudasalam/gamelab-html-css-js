@@ -1,0 +1,42 @@
+<html>
+  <head>
+    <title>Tugas Praktik 9</title>
+  </head>
+  <body>
+    <p>
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam reiciendis
+      aspernatur, ratione cumque hic cupiditate non dolores tempora! Voluptatum
+      rem fugit laboriosam cupiditate deserunt atque sint itaque ex praesentium
+      iste.
+    </p>
+    <p id="text-2">
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam reiciendis
+      aspernatur, ratione cumque hic cupiditate non dolores tempora! Voluptatum
+      rem fugit laboriosam cupiditate deserunt atque sint itaque ex praesentium
+      iste.
+    </p>
+    <p class="text-3">
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam reiciendis
+      aspernatur, ratione cumque hic cupiditate non dolores tempora! Voluptatum
+      rem fugit laboriosam cupiditate deserunt atque sint itaque ex praesentium
+      iste.
+    </p>
+
+    <script>
+      setInterval(function () {
+        var p = document.querySelector('p')
+        p.style.color = p.style.color === 'red' ? 'black' : 'red'
+      }, 1000)
+
+      setInterval(function () {
+        var p = document.getElementById('text-2')
+        p.style.color = p.style.color === 'green' ? 'black' : 'green'
+      }, 1000)
+
+      setInterval(function () {
+        var p = document.getElementsByClassName('text-3')
+        p[0].style.color = p[0].style.color === 'blue' ? 'black' : 'blue'
+      }, 1000)
+    </script>
+  </body>
+</html>

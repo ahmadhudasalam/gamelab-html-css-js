@@ -1,0 +1,76 @@
+<html>
+  <head>
+    <title>Tugas Akhir</title>
+    <link rel="stylesheet" href="Tugas_Akhir.css" />
+  </head>
+  <body>
+    <h1>RS Game Lab Indonesia</h1>
+    <form action="">
+      <label for="id">ID Pasien</label>
+      <div class="pencarian">
+        <input type="number" id="id" name="id" autocomplete="off" required />
+        <button type="submit" id="search">Cari</button>
+      </div>
+      <label for="nama">Nama</label>
+      <input type="text" id="nama" name="nama" autocomplete="off" required />
+      <label for="alamat">Alamat</label>
+      <input
+        type="text"
+        id="alamat"
+        name="alamat"
+        autocomplete="off"
+        required
+      />
+      <label for="penyakit">Penyakit</label>
+      <input
+        type="text"
+        id="penyakit"
+        name="penyakit"
+        autocomplete="off"
+        required
+      />
+      <label for="nomorRuang">Nomor Ruang</label>
+      <input
+        type="text"
+        id="nomorRuang"
+        name="nomorRuang"
+        autocomplete="off"
+        required
+      />
+      <label for="bpjs">BPJS</label>
+      <select name="bpjs" id="bpjs" name="bpjs" required>
+        <option value="Tidak menggunakan">Tidak Menggunakan</option>
+        <option value="Kelas I">Kelas I</option>
+        <option value="Kelas II">Kelas II</option>
+        <option value="Kelas III">Kelas III</option>
+      </select>
+      <label for="tanggalMasuk">Tanggal Masuk</label>
+      <input type="date" id="tanggalMasuk" name="tanggalMasuk" required />
+      <label for="tanggalKeluar">Tanggal Keluar</label>
+      <input type="date" id="tanggalKeluar" name="tanggalKeluar" />
+      <div style="margin-top: 10px">
+        <button type="submit" id="save">Save</button>
+        <button type="submit" id="show">Show</button>
+        <button type="submit" id="delete">Delete</button>
+      </div>
+    </form>
+
+    <table>
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Nama</th>
+          <th>Alamat</th>
+          <th>Penyakit</th>
+          <th>Nomor Ruang</th>
+          <th>BPJS</th>
+          <th>Tanggal Masuk</th>
+          <th>Tanggal Keluar</th>
+        </tr>
+      </thead>
+      <tbody id="dataPasien"></tbody>
+    </table>
+
+    <script src="Tugas_Akhir.js"></script>
+  </body>
+</html>
